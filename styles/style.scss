@@ -1,15 +1,35 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-body{
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
   font-family: 'Red Hat Display', sans-serif;
   background: hsl(225, 100%, 94%) url("../images/pattern-background-desktop.svg") no-repeat;
   background-size: cover;
-
 }
-%centered{
+
+%centered {
   margin: 0 auto;
 }
-.order-summary{
+
+.order-summary {
   color: #263456;
   font-size: 28px;
   font-weight: 900;
@@ -17,13 +37,15 @@ body{
   margin-top: 3rem;
   margin-bottom: 0;
 }
-header{
+
+header {
   background: url("../images/illustration-hero.svg");
   height: 220px;
-  border-radius: 15px 15px  0 0;
+  border-radius: 15px 15px 0 0;
 }
-.component{
-  border-radius: 15px 15px  0 0;
+
+.component {
+  border-radius: 15px 15px 0 0;
   @extend %centered;
   width: 450px;
   background: white;
@@ -42,13 +64,13 @@ header{
   margin: 1rem 3rem 0 3rem;
   height: 100px;
   display: flex;
-  padding: 1rem;
+  padding: 1.5rem;
   justify-content: space-between;
   align-content: center;
 }
 
 .plan-with-price {
-  margin: 2rem 0 0 0;
+
 }
 
 .icon-music {
