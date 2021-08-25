@@ -30,7 +30,7 @@ body {
   background-size: cover;
 }
 
-.payment-button, .component {
+.cancel-button, .payment-button, .component {
   margin: 0 auto;
 }
 
@@ -106,7 +106,21 @@ button {
 }
 
 .buttons {
-  margin: 1.4rem 3rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem 3rem 0 3rem;
+}
+
+.cancel-button {
+  background: none;
+  display: block;
+  color: #9597A9;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 900;
+  padding: 1em 7em;
 }
 
 /*# sourceMappingURL=style.css.map */
