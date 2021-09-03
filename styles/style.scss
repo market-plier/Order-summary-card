@@ -10,6 +10,15 @@ html {
   box-sizing: inherit;
 }
 
+html, body{
+  display: flex;
+  height: 100%;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .attribution {
   font-size: 14px;
   font-weight: 700;
@@ -50,6 +59,7 @@ header {
   background: url("../images/illustration-hero.svg");
   height: 220px;
   border-radius: 15px 15px 0 0;
+  background-size: cover;
 }
 
 .component {
@@ -147,6 +157,63 @@ button{
   color: black;
 }
 
-@media  {
-  
+@media only screen and (max-width: 480px) {
+
+  body{
+    background: hsl(225, 100%, 94%) url("../images/pattern-background-mobile.svg") no-repeat;
+    background-size: cover;
+  }
+
+  header {
+    height: 160px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .component {
+    border-radius: 20px;
+    width: 330px;
+    height: 570px;
+  }
+
+  .order-summary {
+    margin-top: 2rem;
+    font-size: 22px;
+  }
+
+  .order-description {
+    font-size: 15px;
+    margin: 1rem 2.5rem 0 2.5rem;
+    line-height: 1.6;
+  }
+
+  .plan-picker {
+    margin: 1.4rem 1.5rem 0 1.5rem;
+    height: 90px;
+    padding: 1.3rem 1rem;
+  }
+
+  .plan-with-price {
+    padding-left: 1.4rem;
+  }
+
+  .plan-cost {
+    font-size: 14px;
+  }
+
+  .plan-name {
+    font-size: 14px;
+  }
+  .attribution {
+    font-size: 13px;
+  }
+  .buttons {
+    margin: 1rem 1.5rem 0 1.5rem;
+    height: 6.5rem;
+  }
+  .payment-button {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 1em 4em;
+    margin: 0;
+  }
 }

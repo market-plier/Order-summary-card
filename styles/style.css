@@ -1,17 +1,217 @@
-/* Error: Expected identifier.
- *     ,
- * 150 | @media  {
- *     |         ^
- *     '
- *   style.scss 150:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected identifier.\a     \2577 \a 150 \2502  @media  {\d\a     \2502          ^\a     \2575 \a   style.scss 150:9  root stylesheet";
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html, body {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  align-self: center;
+  margin-left: auto;
+  text-decoration: underline;
+}
+
+.attribution a {
+  color: #3e52a3;
+  cursor: pointer;
+}
+
+.attribution a:hover {
+  color: #766CF1;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: #e0e8ff url("../images/pattern-background-desktop.svg") no-repeat;
+  background-size: cover;
+}
+
+.cancel-button, .payment-button, .component {
+  margin: 0 auto;
+}
+
+.order-summary {
+  color: #263456;
+  font-size: 28px;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+header {
+  background: url("../images/illustration-hero.svg");
+  height: 220px;
+  border-radius: 15px 15px 0 0;
+  background-size: cover;
+}
+
+.component {
+  border-radius: 15px 15px 15px 15px;
+  width: 450px;
+  height: 700px;
+  background: white;
+}
+
+.order-description {
+  font-size: 16px;
+  color: #9597A9;
+  text-align: center;
+  margin: 1rem 4rem 0 4rem;
+  line-height: 1.5;
+}
+
+.plan-picker {
+  background: #F8F9FE;
+  margin: 1.4rem 3rem 0 3rem;
+  height: 100px;
+  display: flex;
+  padding: 1.5rem;
+  justify-content: flex-start;
+  align-content: center;
+  border-radius: 15px;
+}
+
+.plan-with-price {
+  padding-left: 1rem;
+  line-height: 1.5;
+}
+
+.plan-name {
+  color: #263456;
+  font-weight: 700;
+  margin: 0;
+}
+
+.plan-cost {
+  color: #9597A9;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem 3rem 0 3rem;
+  height: 7rem;
+}
+
+.payment-button {
+  display: block;
+  background: #3829e0;
+  transition: background-color 0.5s ease-in-out;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 900;
+  padding: 1em 7em;
+  box-shadow: 0 0.9rem 1rem rgba(56, 41, 224, 0.15), 0 1.2rem 1rem rgba(56, 41, 224, 0.1);
+}
+
+.payment-button:hover {
+  background: #766CF1;
+}
+
+.cancel-button {
+  background: none;
+  display: block;
+  color: #9597A9;
+  border: none;
+  transition: color 0.2s ease-in-out;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 900;
+  padding: 1em 0;
+}
+
+.cancel-button:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    background: #e0e8ff url("../images/pattern-background-mobile.svg") no-repeat;
+    background-size: cover;
+  }
+
+  header {
+    height: 160px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .component {
+    border-radius: 20px;
+    width: 330px;
+    height: 570px;
+  }
+
+  .order-summary {
+    margin-top: 2rem;
+    font-size: 22px;
+  }
+
+  .order-description {
+    font-size: 15px;
+    margin: 1rem 2.5rem 0 2.5rem;
+    line-height: 1.6;
+  }
+
+  .plan-picker {
+    margin: 1.4rem 1.5rem 0 1.5rem;
+    height: 90px;
+    padding: 1.3rem 1rem;
+  }
+
+  .plan-with-price {
+    padding-left: 1.4rem;
+  }
+
+  .plan-cost {
+    font-size: 14px;
+  }
+
+  .plan-name {
+    font-size: 14px;
+  }
+
+  .attribution {
+    font-size: 13px;
+  }
+
+  .buttons {
+    margin: 1rem 1.5rem 0 1.5rem;
+    height: 6.5rem;
+  }
+
+  .payment-button {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 1em 4em;
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
