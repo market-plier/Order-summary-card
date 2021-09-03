@@ -41,7 +41,7 @@ html, body {
 body {
   font-family: "Red Hat Display", sans-serif;
   background: #e0e8ff url("../images/pattern-background-desktop.svg") no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .cancel-button, .payment-button, .component {
@@ -154,7 +154,7 @@ button {
 @media only screen and (max-width: 480px) {
   body {
     background: #e0e8ff url("../images/pattern-background-mobile.svg") no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
 
   header {
